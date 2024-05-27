@@ -1,0 +1,565 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V19" />
+  <SW.Blocks.FB ID="0">
+    <AttributeList>
+      <Interface>
+        <Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+          <Section Name="Input">
+            <Member Name="Enable_Drives" Datatype="Bool" />
+            <Member Name="AckError" Datatype="Bool" />
+            <Member Name="SpeedSp" Datatype="Real" />
+          </Section>
+          <Section Name="Output" />
+          <Section Name="InOut" />
+          <Section Name="Static">
+            <Member Name="SINA_SPEED_Instance_1" Datatype="&quot;SINA_SPEED&quot;" />
+            <Member Name="SINA_SPEED_Instance_2" Datatype="&quot;SINA_SPEED&quot;" />
+            <Member Name="SINA_SPEED_Instance_3" Datatype="&quot;SINA_SPEED&quot;" />
+          </Section>
+          <Section Name="Temp" />
+          <Section Name="Constant" />
+        </Sections>
+      </Interface>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>100</MemoryReserve>
+      <Name>DriveLogic</Name>
+      <Namespace />
+      <Number>3</Number>
+      <ProgrammingLanguage>LAD</ProgrammingLanguage>
+      <SetENOAutomatically>false</SetENOAutomatically>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>it-IT</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="5" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>es-ES</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <SW.Blocks.CompileUnit ID="7" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Access Scope="LocalVariable" UId="21">
+                  <Symbol>
+                    <Component Name="Enable_Drives" />
+                  </Symbol>
+                </Access>
+                <Access Scope="LocalVariable" UId="22">
+                  <Symbol>
+                    <Component Name="AckError" />
+                  </Symbol>
+                </Access>
+                <Access Scope="LocalVariable" UId="23">
+                  <Symbol>
+                    <Component Name="SpeedSp" />
+                  </Symbol>
+                </Access>
+                <Access Scope="LiteralConstant" UId="24">
+                  <Constant>
+                    <ConstantType>Real</ConstantType>
+                    <ConstantValue>1500.0</ConstantValue>
+                  </Constant>
+                </Access>
+                <Access Scope="GlobalConstant" UId="25">
+                  <Constant Name="Drive_1~PROFINET_interface~Standard_telegram_1" />
+                </Access>
+                <Access Scope="GlobalConstant" UId="26">
+                  <Constant Name="Drive_1~PROFINET_interface~Standard_telegram_1" />
+                </Access>
+                <Call UId="27">
+                  <CallInfo Name="SINA_SPEED" BlockType="FB">
+                    <Instance Scope="LocalVariable" UId="28">
+                      <Component Name="SINA_SPEED_Instance_1" />
+                    </Instance>
+                    <Parameter Name="EnableAxis" Section="Input" Type="Bool" />
+                    <Parameter Name="AckError" Section="Input" Type="Bool" />
+                    <Parameter Name="SpeedSp" Section="Input" Type="Real" />
+                    <Parameter Name="RefSpeed" Section="Input" Type="Real" />
+                    <Parameter Name="ConfigAxis" Section="Input" Type="Word" />
+                    <Parameter Name="HWIDSTW" Section="Input" Type="HW_IO" />
+                    <Parameter Name="HWIDZSW" Section="Input" Type="HW_IO" />
+                    <Parameter Name="AxisEnabled" Section="Output" Type="Bool" />
+                    <Parameter Name="Lockout" Section="Output" Type="Bool" />
+                    <Parameter Name="ActVelocity" Section="Output" Type="Real" />
+                    <Parameter Name="Error" Section="Output" Type="Bool" />
+                    <Parameter Name="Status" Section="Output" Type="Word" />
+                    <Parameter Name="DiagId" Section="Output" Type="Word" />
+                  </CallInfo>
+                </Call>
+                <Access Scope="LocalVariable" UId="211">
+                  <Symbol>
+                    <Component Name="Enable_Drives" />
+                  </Symbol>
+                </Access>
+                <Access Scope="LocalVariable" UId="221">
+                  <Symbol>
+                    <Component Name="AckError" />
+                  </Symbol>
+                </Access>
+                <Access Scope="LocalVariable" UId="231">
+                  <Symbol>
+                    <Component Name="SpeedSp" />
+                  </Symbol>
+                </Access>
+                <Access Scope="LiteralConstant" UId="241">
+                  <Constant>
+                    <ConstantType>Real</ConstantType>
+                    <ConstantValue>1500.0</ConstantValue>
+                  </Constant>
+                </Access>
+                <Access Scope="GlobalConstant" UId="251">
+                  <Constant Name="Drive_2~PROFINET_interface~Standard_telegram_1" />
+                </Access>
+                <Access Scope="GlobalConstant" UId="261">
+                  <Constant Name="Drive_2~PROFINET_interface~Standard_telegram_1" />
+                </Access>
+                <Call UId="271">
+                  <CallInfo Name="SINA_SPEED" BlockType="FB">
+                    <Instance Scope="LocalVariable" UId="281">
+                      <Component Name="SINA_SPEED_Instance_2" />
+                    </Instance>
+                    <Parameter Name="EnableAxis" Section="Input" Type="Bool" />
+                    <Parameter Name="AckError" Section="Input" Type="Bool" />
+                    <Parameter Name="SpeedSp" Section="Input" Type="Real" />
+                    <Parameter Name="RefSpeed" Section="Input" Type="Real" />
+                    <Parameter Name="ConfigAxis" Section="Input" Type="Word" />
+                    <Parameter Name="HWIDSTW" Section="Input" Type="HW_IO" />
+                    <Parameter Name="HWIDZSW" Section="Input" Type="HW_IO" />
+                    <Parameter Name="AxisEnabled" Section="Output" Type="Bool" />
+                    <Parameter Name="Lockout" Section="Output" Type="Bool" />
+                    <Parameter Name="ActVelocity" Section="Output" Type="Real" />
+                    <Parameter Name="Error" Section="Output" Type="Bool" />
+                    <Parameter Name="Status" Section="Output" Type="Word" />
+                    <Parameter Name="DiagId" Section="Output" Type="Word" />
+                  </CallInfo>
+                </Call>
+                <Access Scope="LocalVariable" UId="212">
+                  <Symbol>
+                    <Component Name="Enable_Drives" />
+                  </Symbol>
+                </Access>
+                <Access Scope="LocalVariable" UId="222">
+                  <Symbol>
+                    <Component Name="AckError" />
+                  </Symbol>
+                </Access>
+                <Access Scope="LocalVariable" UId="232">
+                  <Symbol>
+                    <Component Name="SpeedSp" />
+                  </Symbol>
+                </Access>
+                <Access Scope="LiteralConstant" UId="242">
+                  <Constant>
+                    <ConstantType>Real</ConstantType>
+                    <ConstantValue>1500.0</ConstantValue>
+                  </Constant>
+                </Access>
+                <Access Scope="GlobalConstant" UId="252">
+                  <Constant Name="Drive_3~PROFINET_interface~Standard_telegram_1" />
+                </Access>
+                <Access Scope="GlobalConstant" UId="262">
+                  <Constant Name="Drive_3~PROFINET_interface~Standard_telegram_1" />
+                </Access>
+                <Call UId="272">
+                  <CallInfo Name="SINA_SPEED" BlockType="FB">
+                    <Instance Scope="LocalVariable" UId="282">
+                      <Component Name="SINA_SPEED_Instance_3" />
+                    </Instance>
+                    <Parameter Name="EnableAxis" Section="Input" Type="Bool" />
+                    <Parameter Name="AckError" Section="Input" Type="Bool" />
+                    <Parameter Name="SpeedSp" Section="Input" Type="Real" />
+                    <Parameter Name="RefSpeed" Section="Input" Type="Real" />
+                    <Parameter Name="ConfigAxis" Section="Input" Type="Word" />
+                    <Parameter Name="HWIDSTW" Section="Input" Type="HW_IO" />
+                    <Parameter Name="HWIDZSW" Section="Input" Type="HW_IO" />
+                    <Parameter Name="AxisEnabled" Section="Output" Type="Bool" />
+                    <Parameter Name="Lockout" Section="Output" Type="Bool" />
+                    <Parameter Name="ActVelocity" Section="Output" Type="Real" />
+                    <Parameter Name="Error" Section="Output" Type="Bool" />
+                    <Parameter Name="Status" Section="Output" Type="Word" />
+                    <Parameter Name="DiagId" Section="Output" Type="Word" />
+                  </CallInfo>
+                </Call>
+              </Parts>
+              <Wires>
+                <Wire UId="36">
+                  <Powerrail />
+                  <NameCon UId="27" Name="en" />
+                  <NameCon UId="271" Name="en" />
+                  <NameCon UId="272" Name="en" />
+                </Wire>
+                <Wire UId="37">
+                  <IdentCon UId="21" />
+                  <NameCon UId="27" Name="EnableAxis" />
+                </Wire>
+                <Wire UId="38">
+                  <IdentCon UId="22" />
+                  <NameCon UId="27" Name="AckError" />
+                </Wire>
+                <Wire UId="39">
+                  <IdentCon UId="23" />
+                  <NameCon UId="27" Name="SpeedSp" />
+                </Wire>
+                <Wire UId="40">
+                  <IdentCon UId="24" />
+                  <NameCon UId="27" Name="RefSpeed" />
+                </Wire>
+                <Wire UId="41">
+                  <OpenCon UId="29" />
+                  <NameCon UId="27" Name="ConfigAxis" />
+                </Wire>
+                <Wire UId="42">
+                  <IdentCon UId="25" />
+                  <NameCon UId="27" Name="HWIDSTW" />
+                </Wire>
+                <Wire UId="43">
+                  <IdentCon UId="26" />
+                  <NameCon UId="27" Name="HWIDZSW" />
+                </Wire>
+                <Wire UId="44">
+                  <NameCon UId="27" Name="AxisEnabled" />
+                  <OpenCon UId="30" />
+                </Wire>
+                <Wire UId="45">
+                  <NameCon UId="27" Name="Lockout" />
+                  <OpenCon UId="31" />
+                </Wire>
+                <Wire UId="46">
+                  <NameCon UId="27" Name="ActVelocity" />
+                  <OpenCon UId="32" />
+                </Wire>
+                <Wire UId="47">
+                  <NameCon UId="27" Name="Error" />
+                  <OpenCon UId="33" />
+                </Wire>
+                <Wire UId="48">
+                  <NameCon UId="27" Name="Status" />
+                  <OpenCon UId="34" />
+                </Wire>
+                <Wire UId="49">
+                  <NameCon UId="27" Name="DiagId" />
+                  <OpenCon UId="35" />
+                </Wire>
+                <Wire UId="371">
+                  <IdentCon UId="211" />
+                  <NameCon UId="271" Name="EnableAxis" />
+                </Wire>
+                <Wire UId="381">
+                  <IdentCon UId="221" />
+                  <NameCon UId="271" Name="AckError" />
+                </Wire>
+                <Wire UId="391">
+                  <IdentCon UId="231" />
+                  <NameCon UId="271" Name="SpeedSp" />
+                </Wire>
+                <Wire UId="401">
+                  <IdentCon UId="241" />
+                  <NameCon UId="271" Name="RefSpeed" />
+                </Wire>
+                <Wire UId="411">
+                  <OpenCon UId="291" />
+                  <NameCon UId="271" Name="ConfigAxis" />
+                </Wire>
+                <Wire UId="421">
+                  <IdentCon UId="251" />
+                  <NameCon UId="271" Name="HWIDSTW" />
+                </Wire>
+                <Wire UId="431">
+                  <IdentCon UId="261" />
+                  <NameCon UId="271" Name="HWIDZSW" />
+                </Wire>
+                <Wire UId="441">
+                  <NameCon UId="271" Name="AxisEnabled" />
+                  <OpenCon UId="301" />
+                </Wire>
+                <Wire UId="451">
+                  <NameCon UId="271" Name="Lockout" />
+                  <OpenCon UId="311" />
+                </Wire>
+                <Wire UId="461">
+                  <NameCon UId="271" Name="ActVelocity" />
+                  <OpenCon UId="321" />
+                </Wire>
+                <Wire UId="471">
+                  <NameCon UId="271" Name="Error" />
+                  <OpenCon UId="331" />
+                </Wire>
+                <Wire UId="481">
+                  <NameCon UId="271" Name="Status" />
+                  <OpenCon UId="341" />
+                </Wire>
+                <Wire UId="491">
+                  <NameCon UId="271" Name="DiagId" />
+                  <OpenCon UId="351" />
+                </Wire>
+                <Wire UId="372">
+                  <IdentCon UId="212" />
+                  <NameCon UId="272" Name="EnableAxis" />
+                </Wire>
+                <Wire UId="382">
+                  <IdentCon UId="222" />
+                  <NameCon UId="272" Name="AckError" />
+                </Wire>
+                <Wire UId="392">
+                  <IdentCon UId="232" />
+                  <NameCon UId="272" Name="SpeedSp" />
+                </Wire>
+                <Wire UId="402">
+                  <IdentCon UId="242" />
+                  <NameCon UId="272" Name="RefSpeed" />
+                </Wire>
+                <Wire UId="412">
+                  <OpenCon UId="292" />
+                  <NameCon UId="272" Name="ConfigAxis" />
+                </Wire>
+                <Wire UId="422">
+                  <IdentCon UId="252" />
+                  <NameCon UId="272" Name="HWIDSTW" />
+                </Wire>
+                <Wire UId="432">
+                  <IdentCon UId="262" />
+                  <NameCon UId="272" Name="HWIDZSW" />
+                </Wire>
+                <Wire UId="442">
+                  <NameCon UId="272" Name="AxisEnabled" />
+                  <OpenCon UId="302" />
+                </Wire>
+                <Wire UId="452">
+                  <NameCon UId="272" Name="Lockout" />
+                  <OpenCon UId="312" />
+                </Wire>
+                <Wire UId="462">
+                  <NameCon UId="272" Name="ActVelocity" />
+                  <OpenCon UId="322" />
+                </Wire>
+                <Wire UId="472">
+                  <NameCon UId="272" Name="Error" />
+                  <OpenCon UId="332" />
+                </Wire>
+                <Wire UId="482">
+                  <NameCon UId="272" Name="Status" />
+                  <OpenCon UId="342" />
+                </Wire>
+                <Wire UId="492">
+                  <NameCon UId="272" Name="DiagId" />
+                  <OpenCon UId="352" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="8" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="9" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="B" CompositionName="Items">
+                <AttributeList>
+                  <Culture>it-IT</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>fr-FR</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="D" CompositionName="Items">
+                <AttributeList>
+                  <Culture>es-ES</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="E" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="F" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="10" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="11" CompositionName="Items">
+                <AttributeList>
+                  <Culture>it-IT</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="12" CompositionName="Items">
+                <AttributeList>
+                  <Culture>fr-FR</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="13" CompositionName="Items">
+                <AttributeList>
+                  <Culture>es-ES</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="14" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource />
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="15" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="16" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="17" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="18" CompositionName="Items">
+                <AttributeList>
+                  <Culture>it-IT</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="19" CompositionName="Items">
+                <AttributeList>
+                  <Culture>fr-FR</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="1A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>es-ES</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="1B" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="1C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="1D" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="1E" CompositionName="Items">
+                <AttributeList>
+                  <Culture>it-IT</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="1F" CompositionName="Items">
+                <AttributeList>
+                  <Culture>fr-FR</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="20" CompositionName="Items">
+                <AttributeList>
+                  <Culture>es-ES</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <MultilingualText ID="21" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="22" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="23" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="24" CompositionName="Items">
+            <AttributeList>
+              <Culture>it-IT</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="25" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="26" CompositionName="Items">
+            <AttributeList>
+              <Culture>es-ES</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.FB>
+</Document>

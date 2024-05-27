@@ -1,0 +1,488 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+	<Engineering version="V19" />
+	<DocumentInfo>
+		<Created>2019-11-05T14:58:38.0345435Z</Created>
+		<ExportSetting>None</ExportSetting>
+	</DocumentInfo>
+	<SW.Blocks.FB ID="0">
+		<AttributeList>
+			<Interface>
+				<Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v3">
+					<Section Name="Input">
+						<Member Name="Enable_Sequence" Datatype="Bool" />
+						<Member Name="LightBarier_1" Datatype="Bool" />
+						<Member Name="LightBarier_2" Datatype="Bool" />
+					</Section>
+					<Section Name="Output">
+						<Member Name="Enable_Drives" Datatype="Bool" />
+						<Member Name="Conveyor_Speed" Datatype="Real" />
+						<Member Name="Current_Step" Datatype="Int" />
+					</Section>
+					<Section Name="InOut" />
+					<Section Name="Static">
+						<Member Name="step" Datatype="Int">
+							<AttributeList>
+								<BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+								<BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+								<BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+							</AttributeList>
+						</Member>
+					</Section>
+					<Section Name="Temp" />
+					<Section Name="Constant" />
+				</Sections>
+			</Interface>
+			<MemoryLayout>Optimized</MemoryLayout>
+			<MemoryReserve>100</MemoryReserve>
+			<Name>Logic</Name>
+			<Number>2</Number>
+			<ProgrammingLanguage>SCL</ProgrammingLanguage>
+			<SetENOAutomatically>False</SetENOAutomatically>
+		</AttributeList>
+		<ObjectList>
+			<MultilingualText ID="1" CompositionName="Comment">
+				<ObjectList>
+					<MultilingualTextItem ID="2" CompositionName="Items">
+						<AttributeList>
+							<Culture>en-US</Culture>
+							<Text />
+						</AttributeList>
+					</MultilingualTextItem>
+				</ObjectList>
+			</MultilingualText>
+			<SW.Blocks.CompileUnit ID="3" CompositionName="CompileUnits">
+				<AttributeList>
+					<NetworkSource>
+						<StructuredText xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StructuredText/v2">
+							<Access Scope="LocalVariable" UId="21">
+								<Symbol UId="22">
+									<Component Name="Current_Step" UId="23" />
+								</Symbol>
+							</Access>
+							<Blank UId="24" />
+							<Token Text=":=" UId="25" />
+							<Blank UId="26" />
+							<Access Scope="LocalVariable" UId="27">
+								<Symbol UId="28">
+									<Component Name="step" UId="29" />
+								</Symbol>
+							</Access>
+							<Token Text=";" UId="30" />
+							<NewLine UId="31" />
+							<Token Text="CASE" UId="32" />
+							<Blank UId="33" />
+							<Access Scope="LocalVariable" UId="34">
+								<Symbol UId="35">
+									<Component Name="step" UId="36" />
+								</Symbol>
+							</Access>
+							<Blank UId="37" />
+							<Token Text="OF" UId="38" />
+							<NewLine UId="39" />
+							<Blank Num="4" UId="40" />
+							<Access Scope="LiteralConstant" UId="41">
+								<Constant UId="42">
+									<ConstantValue UId="44">0</ConstantValue>
+								</Constant>
+							</Access>
+							<Token Text=":" UId="45" />
+							<Blank Num="2" UId="46" />
+							<LineComment UId="47">
+								<Text UId="48"> Statement section case 1</Text>
+							</LineComment>
+							<NewLine UId="49" />
+							<Blank Num="8" UId="50" />
+							<Token Text="IF" UId="51" />
+							<Blank UId="52" />
+							<Access Scope="LocalVariable" UId="53">
+								<Symbol UId="54">
+									<Component Name="Enable_Sequence" UId="55" />
+								</Symbol>
+							</Access>
+							<Blank UId="56" />
+							<Token Text="THEN" UId="57" />
+							<NewLine UId="58" />
+							<Blank Num="12" UId="59" />
+							<Access Scope="LocalVariable" UId="60">
+								<Symbol UId="61">
+									<Component Name="Enable_Drives" UId="62" />
+								</Symbol>
+							</Access>
+							<Blank UId="63" />
+							<Token Text=":=" UId="64" />
+							<Blank UId="65" />
+							<Access Scope="LiteralConstant" UId="66">
+								<Constant UId="67">
+									<ConstantValue UId="69">TRUE</ConstantValue>
+								</Constant>
+							</Access>
+							<Token Text=";" UId="70" />
+							<NewLine UId="71" />
+							<Blank Num="12" UId="72" />
+							<Access Scope="LocalVariable" UId="73">
+								<Symbol UId="74">
+									<Component Name="Conveyor_Speed" UId="75" />
+								</Symbol>
+							</Access>
+							<Blank UId="76" />
+							<Token Text=":=" UId="77" />
+							<Blank UId="78" />
+							<Access Scope="LiteralConstant" UId="79">
+								<Constant UId="80">
+									<ConstantValue UId="82">0</ConstantValue>
+								</Constant>
+							</Access>
+							<Token Text=";" UId="83" />
+							<NewLine UId="84" />
+							<Blank Num="12" UId="85" />
+							<Access Scope="LocalVariable" UId="86">
+								<Symbol UId="87">
+									<Component Name="step" UId="88" />
+								</Symbol>
+							</Access>
+							<Blank UId="89" />
+							<Token Text=":=" UId="90" />
+							<Blank UId="91" />
+							<Access Scope="LiteralConstant" UId="92">
+								<Constant UId="93">
+									<ConstantValue UId="95">1</ConstantValue>
+								</Constant>
+							</Access>
+							<Token Text=";" UId="96" />
+							<NewLine UId="97" />
+							<Blank Num="8" UId="98" />
+							<Token Text="END_IF" UId="99" />
+							<Token Text=";" UId="100" />
+							<NewLine UId="101" />
+							<Blank Num="4" UId="102" />
+							<Access Scope="LiteralConstant" UId="103">
+								<Constant UId="104">
+									<ConstantValue UId="106">1</ConstantValue>
+								</Constant>
+							</Access>
+							<Token Text=":" UId="107" />
+							<NewLine UId="108" />
+							<Blank Num="8" UId="109" />
+							<Token Text="IF" UId="110" />
+							<Blank UId="111" />
+							<Token Text="(" UId="112" />
+							<Access Scope="LocalVariable" UId="113">
+								<Symbol UId="114">
+									<Component Name="LightBarier_1" UId="115" />
+								</Symbol>
+							</Access>
+							<Blank UId="116" />
+							<Token Text="=" UId="117" />
+							<Blank UId="118" />
+							<Access Scope="LiteralConstant" UId="119">
+								<Constant UId="120">
+									<ConstantValue UId="122">FALSE</ConstantValue>
+								</Constant>
+							</Access>
+							<Token Text=")" UId="123" />
+							<Blank UId="124" />
+							<Token Text="THEN" UId="125" />
+							<NewLine UId="126" />
+							<Blank Num="12" UId="127" />
+							<Access Scope="LocalVariable" UId="128">
+								<Symbol UId="129">
+									<Component Name="Conveyor_Speed" UId="130" />
+								</Symbol>
+							</Access>
+							<Blank UId="131" />
+							<Token Text=":=" UId="132" />
+							<Blank UId="133" />
+							<Access Scope="LiteralConstant" UId="134">
+								<Constant UId="135">
+									<ConstantValue UId="137">-500</ConstantValue>
+								</Constant>
+							</Access>
+							<Token Text=";" UId="138" />
+							<NewLine UId="139" />
+							<Blank Num="12" UId="140" />
+							<Access Scope="LocalVariable" UId="141">
+								<Symbol UId="142">
+									<Component Name="step" UId="143" />
+								</Symbol>
+							</Access>
+							<Blank UId="144" />
+							<Token Text=":=" UId="145" />
+							<Blank UId="146" />
+							<Access Scope="LiteralConstant" UId="147">
+								<Constant UId="148">
+									<ConstantValue UId="150">2</ConstantValue>
+								</Constant>
+							</Access>
+							<Token Text=";" UId="151" />
+							<NewLine UId="152" />
+							<Blank Num="8" UId="153" />
+							<Token Text="END_IF" UId="154" />
+							<Token Text=";" UId="155" />
+							<NewLine UId="156" />
+							<Blank Num="4" UId="157" />
+							<Access Scope="LiteralConstant" UId="158">
+								<Constant UId="159">
+									<ConstantValue UId="161">2</ConstantValue>
+								</Constant>
+							</Access>
+							<Token Text=":" UId="162" />
+							<NewLine UId="163" />
+							<Blank Num="8" UId="164" />
+							<Token Text="IF" UId="165" />
+							<Blank UId="166" />
+							<Token Text="(" UId="167" />
+							<Access Scope="LocalVariable" UId="168">
+								<Symbol UId="169">
+									<Component Name="LightBarier_1" UId="170" />
+								</Symbol>
+							</Access>
+							<Blank UId="171" />
+							<Token Text="=" UId="172" />
+							<Blank UId="173" />
+							<Access Scope="LiteralConstant" UId="174">
+								<Constant UId="175">
+									<ConstantValue UId="177">TRUE</ConstantValue>
+								</Constant>
+							</Access>
+							<Token Text=")" UId="178" />
+							<Blank UId="179" />
+							<Token Text="THEN" UId="180" />
+							<NewLine UId="181" />
+							<Blank Num="12" UId="182" />
+							<Access Scope="LocalVariable" UId="183">
+								<Symbol UId="184">
+									<Component Name="Conveyor_Speed" UId="185" />
+								</Symbol>
+							</Access>
+							<Blank UId="186" />
+							<Token Text=":=" UId="187" />
+							<Blank UId="188" />
+							<Access Scope="LiteralConstant" UId="189">
+								<Constant UId="190">
+									<ConstantValue UId="192">0</ConstantValue>
+								</Constant>
+							</Access>
+							<Token Text=";" UId="193" />
+							<NewLine UId="194" />
+							<Blank Num="12" UId="195" />
+							<Access Scope="LocalVariable" UId="196">
+								<Symbol UId="197">
+									<Component Name="step" UId="198" />
+								</Symbol>
+							</Access>
+							<Blank UId="199" />
+							<Token Text=":=" UId="200" />
+							<Blank UId="201" />
+							<Access Scope="LiteralConstant" UId="202">
+								<Constant UId="203">
+									<ConstantValue UId="205">3</ConstantValue>
+								</Constant>
+							</Access>
+							<Token Text=";" UId="206" />
+							<NewLine UId="207" />
+							<Blank Num="8" UId="208" />
+							<Token Text="END_IF" UId="209" />
+							<Token Text=";" UId="210" />
+							<NewLine UId="211" />
+							<Blank Num="4" UId="212" />
+							<Access Scope="LiteralConstant" UId="213">
+								<Constant UId="214">
+									<ConstantValue UId="216">3</ConstantValue>
+								</Constant>
+							</Access>
+							<Token Text=":" UId="217" />
+							<NewLine UId="218" />
+							<Blank Num="8" UId="219" />
+							<Token Text="IF" UId="220" />
+							<Blank UId="221" />
+							<Token Text="(" UId="222" />
+							<Access Scope="LocalVariable" UId="223">
+								<Symbol UId="224">
+									<Component Name="LightBarier_2" UId="225" />
+								</Symbol>
+							</Access>
+							<Blank UId="226" />
+							<Token Text="=" UId="227" />
+							<Blank UId="228" />
+							<Access Scope="LiteralConstant" UId="229">
+								<Constant UId="230">
+									<ConstantValue UId="232">FALSE</ConstantValue>
+								</Constant>
+							</Access>
+							<Token Text=")" UId="233" />
+							<Blank UId="234" />
+							<Token Text="THEN" UId="235" />
+							<NewLine UId="236" />
+							<Blank Num="12" UId="237" />
+							<Access Scope="LocalVariable" UId="238">
+								<Symbol UId="239">
+									<Component Name="Conveyor_Speed" UId="240" />
+								</Symbol>
+							</Access>
+							<Blank UId="241" />
+							<Token Text=":=" UId="242" />
+							<Blank UId="243" />
+							<Access Scope="LiteralConstant" UId="244">
+								<Constant UId="245">
+									<ConstantValue UId="247">500</ConstantValue>
+								</Constant>
+							</Access>
+							<Token Text=";" UId="248" />
+							<NewLine UId="249" />
+							<Blank Num="12" UId="250" />
+							<Access Scope="LocalVariable" UId="251">
+								<Symbol UId="252">
+									<Component Name="step" UId="253" />
+								</Symbol>
+							</Access>
+							<Blank UId="254" />
+							<Token Text=":=" UId="255" />
+							<Blank UId="256" />
+							<Access Scope="LiteralConstant" UId="257">
+								<Constant UId="258">
+									<ConstantValue UId="260">4</ConstantValue>
+								</Constant>
+							</Access>
+							<Token Text=";" UId="261" />
+							<NewLine UId="262" />
+							<Blank Num="8" UId="263" />
+							<Token Text="END_IF" UId="264" />
+							<Token Text=";" UId="265" />
+							<NewLine UId="266" />
+							<Blank Num="4" UId="267" />
+							<Access Scope="LiteralConstant" UId="268">
+								<Constant UId="269">
+									<ConstantValue UId="271">4</ConstantValue>
+								</Constant>
+							</Access>
+							<Token Text=":" UId="272" />
+							<NewLine UId="273" />
+							<Blank Num="8" UId="274" />
+							<Token Text="IF" UId="275" />
+							<Blank UId="276" />
+							<Token Text="(" UId="277" />
+							<Access Scope="LocalVariable" UId="278">
+								<Symbol UId="279">
+									<Component Name="LightBarier_2" UId="280" />
+								</Symbol>
+							</Access>
+							<Blank UId="281" />
+							<Token Text="=" UId="282" />
+							<Blank UId="283" />
+							<Access Scope="LiteralConstant" UId="284">
+								<Constant UId="285">
+									<ConstantValue UId="287">TRUE</ConstantValue>
+								</Constant>
+							</Access>
+							<Token Text=")" UId="288" />
+							<Blank UId="289" />
+							<Token Text="THEN" UId="290" />
+							<NewLine UId="291" />
+							<Blank Num="12" UId="292" />
+							<Access Scope="LocalVariable" UId="293">
+								<Symbol UId="294">
+									<Component Name="Conveyor_Speed" UId="295" />
+								</Symbol>
+							</Access>
+							<Blank UId="296" />
+							<Token Text=":=" UId="297" />
+							<Blank UId="298" />
+							<Access Scope="LiteralConstant" UId="299">
+								<Constant UId="300">
+									<ConstantValue UId="302">0</ConstantValue>
+								</Constant>
+							</Access>
+							<Token Text=";" UId="303" />
+							<NewLine UId="304" />
+							<Blank Num="12" UId="305" />
+							<Access Scope="LocalVariable" UId="306">
+								<Symbol UId="307">
+									<Component Name="step" UId="308" />
+								</Symbol>
+							</Access>
+							<Blank UId="309" />
+							<Token Text=":=" UId="310" />
+							<Blank UId="311" />
+							<Access Scope="LiteralConstant" UId="312">
+								<Constant UId="313">
+									<ConstantValue UId="315">0</ConstantValue>
+								</Constant>
+							</Access>
+							<Token Text=";" UId="316" />
+							<NewLine UId="317" />
+							<Blank Num="12" UId="318" />
+							<Access Scope="LocalVariable" UId="319">
+								<Symbol UId="320">
+									<Component Name="Enable_Drives" UId="321" />
+								</Symbol>
+							</Access>
+							<Blank UId="322" />
+							<Token Text=":=" UId="323" />
+							<Blank UId="324" />
+							<Access Scope="LiteralConstant" UId="325">
+								<Constant UId="326">
+									<ConstantValue UId="328">FALSE</ConstantValue>
+								</Constant>
+							</Access>
+							<Token Text=";" UId="329" />
+							<NewLine UId="330" />
+							<Blank Num="8" UId="331" />
+							<Token Text="END_IF" UId="332" />
+							<Token Text=";" UId="333" />
+							<NewLine UId="334" />
+							<Blank Num="8" UId="335" />
+							<NewLine UId="336" />
+							<Blank Num="4" UId="337" />
+							<Token Text="ELSE" UId="338" />
+							<Blank Num="2" UId="339" />
+							<LineComment UId="340">
+								<Text UId="341"> Statement section ELSE</Text>
+							</LineComment>
+							<NewLine UId="342" />
+							<Blank Num="8" UId="343" />
+							<Token Text=";" UId="344" />
+							<NewLine UId="345" />
+							<Token Text="END_CASE" UId="346" />
+							<Token Text=";" UId="347" />
+							<NewLine UId="348" />
+						</StructuredText>
+					</NetworkSource>
+					<ProgrammingLanguage>SCL</ProgrammingLanguage>
+				</AttributeList>
+				<ObjectList>
+					<MultilingualText ID="4" CompositionName="Comment">
+						<ObjectList>
+							<MultilingualTextItem ID="5" CompositionName="Items">
+								<AttributeList>
+									<Culture>en-US</Culture>
+									<Text />
+								</AttributeList>
+							</MultilingualTextItem>
+						</ObjectList>
+					</MultilingualText>
+					<MultilingualText ID="6" CompositionName="Title">
+						<ObjectList>
+							<MultilingualTextItem ID="7" CompositionName="Items">
+								<AttributeList>
+									<Culture>en-US</Culture>
+									<Text />
+								</AttributeList>
+							</MultilingualTextItem>
+						</ObjectList>
+					</MultilingualText>
+				</ObjectList>
+			</SW.Blocks.CompileUnit>
+			<MultilingualText ID="8" CompositionName="Title">
+				<ObjectList>
+					<MultilingualTextItem ID="9" CompositionName="Items">
+						<AttributeList>
+							<Culture>en-US</Culture>
+							<Text />
+						</AttributeList>
+					</MultilingualTextItem>
+				</ObjectList>
+			</MultilingualText>
+		</ObjectList>
+	</SW.Blocks.FB>
+</Document>

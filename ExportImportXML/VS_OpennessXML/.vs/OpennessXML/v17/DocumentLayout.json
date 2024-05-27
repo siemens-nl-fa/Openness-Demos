@@ -1,0 +1,117 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Siemens\\Desktop\\Openness-Demos\\ExportImportXML\\VS_OpennessXML\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{21A41F20-24A4-4ECD-B94E-5916900BA199}|Openness\\OpennessLibrary.csproj|c:\\users\\siemens\\desktop\\openness-demos\\exportimportxml\\vs_opennessxml\\openness\\dialog\\connectdialog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21A41F20-24A4-4ECD-B94E-5916900BA199}|Openness\\OpennessLibrary.csproj|solutionrelative:openness\\dialog\\connectdialog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21A41F20-24A4-4ECD-B94E-5916900BA199}|Openness\\OpennessLibrary.csproj|c:\\users\\siemens\\desktop\\openness-demos\\exportimportxml\\vs_opennessxml\\openness\\dialog\\connectdialog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{21A41F20-24A4-4ECD-B94E-5916900BA199}|Openness\\OpennessLibrary.csproj|solutionrelative:openness\\dialog\\connectdialog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24E2E195-F82B-466F-8E79-7538BD49A837}|OpennessXML\\OpennessXML.csproj|c:\\users\\siemens\\desktop\\openness-demos\\exportimportxml\\vs_opennessxml\\opennessxml\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24E2E195-F82B-466F-8E79-7538BD49A837}|OpennessXML\\OpennessXML.csproj|solutionrelative:opennessxml\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24E2E195-F82B-466F-8E79-7538BD49A837}|OpennessXML\\OpennessXML.csproj|C:\\Users\\Siemens\\Desktop\\Openness-Demos\\ExportImportXML\\VS_OpennessXML\\opennessxml\\assemblyresolver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24E2E195-F82B-466F-8E79-7538BD49A837}|OpennessXML\\OpennessXML.csproj|solutionrelative:opennessxml\\assemblyresolver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24E2E195-F82B-466F-8E79-7538BD49A837}|OpennessXML\\OpennessXML.csproj|C:\\Users\\Siemens\\Desktop\\Openness-Demos\\ExportImportXML\\VS_OpennessXML\\opennessxml\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24E2E195-F82B-466F-8E79-7538BD49A837}|OpennessXML\\OpennessXML.csproj|solutionrelative:opennessxml\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24E2E195-F82B-466F-8E79-7538BD49A837}|OpennessXML\\OpennessXML.csproj|C:\\Users\\Siemens\\Desktop\\Openness-Demos\\ExportImportXML\\VS_OpennessXML\\opennessxml\\mainform.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "RelativeMoniker": "D:0:0:{24E2E195-F82B-466F-8E79-7538BD49A837}|OpennessXML\\OpennessXML.csproj|solutionrelative:opennessxml\\mainform.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ConnectDialog.cs",
+              "DocumentMoniker": "C:\\Users\\Siemens\\Desktop\\Openness-Demos\\ExportImportXML\\VS_OpennessXML\\Openness\\Dialog\\ConnectDialog.cs",
+              "RelativeDocumentMoniker": "Openness\\Dialog\\ConnectDialog.cs",
+              "ToolTip": "C:\\Users\\Siemens\\Desktop\\Openness-Demos\\ExportImportXML\\VS_OpennessXML\\Openness\\Dialog\\ConnectDialog.cs",
+              "RelativeToolTip": "Openness\\Dialog\\ConnectDialog.cs",
+              "ViewState": "AQIAAFkAAAAAAAAAAAAmwEMAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T13:12:11.613Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ConnectDialog.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Siemens\\Desktop\\Openness-Demos\\ExportImportXML\\VS_OpennessXML\\Openness\\Dialog\\ConnectDialog.cs",
+              "RelativeDocumentMoniker": "Openness\\Dialog\\ConnectDialog.cs",
+              "ToolTip": "C:\\Users\\Siemens\\Desktop\\Openness-Demos\\ExportImportXML\\VS_OpennessXML\\Openness\\Dialog\\ConnectDialog.cs [Design]",
+              "RelativeToolTip": "Openness\\Dialog\\ConnectDialog.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T13:12:04.909Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Siemens\\Desktop\\Openness-Demos\\ExportImportXML\\VS_OpennessXML\\OpennessXML\\MainForm.Designer.cs",
+              "RelativeDocumentMoniker": "OpennessXML\\MainForm.Designer.cs",
+              "ToolTip": "C:\\Users\\Siemens\\Desktop\\Openness-Demos\\ExportImportXML\\VS_OpennessXML\\OpennessXML\\MainForm.Designer.cs",
+              "RelativeToolTip": "OpennessXML\\MainForm.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T12:41:06.338Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MainForm.resx",
+              "DocumentMoniker": "C:\\Users\\Siemens\\Desktop\\Openness-Demos\\ExportImportXML\\VS_OpennessXML\\OpennessXML\\MainForm.resx",
+              "RelativeDocumentMoniker": "OpennessXML\\MainForm.resx",
+              "ToolTip": "C:\\Users\\Siemens\\Desktop\\Openness-Demos\\ExportImportXML\\VS_OpennessXML\\OpennessXML\\MainForm.resx",
+              "RelativeToolTip": "OpennessXML\\MainForm.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2024-05-27T12:41:06.601Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Siemens\\Desktop\\Openness-Demos\\ExportImportXML\\VS_OpennessXML\\OpennessXML\\Program.cs",
+              "RelativeDocumentMoniker": "OpennessXML\\Program.cs",
+              "ToolTip": "C:\\Users\\Siemens\\Desktop\\Openness-Demos\\ExportImportXML\\VS_OpennessXML\\OpennessXML\\Program.cs",
+              "RelativeToolTip": "OpennessXML\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T12:41:06.611Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AssemblyResolver.cs",
+              "DocumentMoniker": "C:\\Users\\Siemens\\Desktop\\Openness-Demos\\ExportImportXML\\VS_OpennessXML\\OpennessXML\\AssemblyResolver.cs",
+              "RelativeDocumentMoniker": "OpennessXML\\AssemblyResolver.cs",
+              "ToolTip": "C:\\Users\\Siemens\\Desktop\\Openness-Demos\\ExportImportXML\\VS_OpennessXML\\OpennessXML\\AssemblyResolver.cs",
+              "RelativeToolTip": "OpennessXML\\AssemblyResolver.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T12:41:06.615Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
